@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Identidad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video de fondo -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="https://gorentacars.com.py/wp-content/uploads/2023/09/GRCbanner1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Contenedor del formulario -->
+    <div class="container">
+        <div class="form-container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Verificación de Identidad</h1>
+                    <form id="registration-form" enctype="multipart/form-data">
+                        <!-- Campos del formulario -->
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nombre Completo</label>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="text" id="id" name="id" required>
+                            <label for="id">Cédula</label>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Correo Electrónico</label>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="text" id="uber-account" name="uber-account" required>
+                            <label for="uber-account">Cuenta de Uber/Bolt</label>
+                        </div>
+                        <div class="form-group file-input">
+                            <label for="id-card-photo">Foto de la Cédula de Identidad</label>
+                            <input type="file" id="id-card-photo" name="idCardPhoto" accept="image/*" required>
+                        </div>
+                        <div class="form-group file-input">
+                            <label for="background-check-photo">Foto de los Antecedentes Judiciales y Policiales</label>
+                            <input type="file" id="background-check-photo" name="backgroundCheckPhoto" accept="image/*" required>
+                        </div>
+                        <div class="form-group file-input">
+                            <label for="personal-reference-photo">Foto de las Referencias Personales</label>
+                            <input type="file" id="personal-reference-photo" name="personalReferencePhoto" accept="image/*" required>
+                        </div>
+                        <div class="form-group file-input">
+                            <label for="service-bill-photo">Foto del Comprobante de Servicio (Essap o Ande)</label>
+                            <input type="file" id="service-bill-photo" name="serviceBillPhoto" accept="image/*" required>
+                        </div>
+                        <div class="form-group file-input">
+                            <label for="house-photo">Foto de la Casa</label>
+                            <input type="file" id="house-photo" name="housePhoto" accept="image/*" required>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="url" id="google-maps-link" name="googleMapsLink" required>
+                            <label for="google-maps-link">Ubicación de Residencia (Link Google Maps)</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-check-circle"></i> Verificar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
